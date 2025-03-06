@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gab X - Test</title>
+
+    <!-- Import Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* Default Light Theme */
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Dark Theme */
+        body.dark-mode {
+            background-color: #222;
+            color: #fff;
+        }
+
+        /* Button Styling */
+        button {
+            padding: 12px 24px;
+            margin: 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Header Styling */
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        span {
+            color: red;
+            font-size: 2rem;
+            letter-spacing: 2px;
+        }
+
+        /* Image Styling */
+        img {
+            width: 200px;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        /* Container Styling */
+        .container {
+            max-width: 380px;
+            margin: 20px auto;
+            padding: 40px;
+            background: rgba(0, 0, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 1px;
+        }
+
+        /* Form Styling */
+        input, select {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        /* Link Button */
+        .button {
+            display: block;
+            width: 90%;
+            padding: 13px;
+            margin: 10px 0;
+            font-size: 1rem;
+            font-weight: bold;
+            color: white;
+            background: #28a745;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            text-align: center;
+            transition: background 0.3s ease;
+        }
+
+        .button:hover {
+            background: #218838;
+        }
+
+        /* Footer */
+        h2 {
+            margin-top: 20px;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="theme-toggle">Switch Theme</button>
+
+    <h1>ᴛʜɪs <span><b>GAB-X</b></span></h1>
+    <img src="gab2.png" alt="Gab X">
+    
+    <div class="container">
+        <h1>Welcome to GAB-X Website 🎉</h1>
+        <p>Hello guys, you are kindly welcome to Gab X's interface.</p>
+
+        <h3>Gᴀʙ X ғᴏʀᴍs</h3>
+
+        <form>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" placeholder="Gabriel">
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Agyei Yirenkyi">
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter Email........">
+
+            <label>Gender:</label><br>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="Male">
+            
+             <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="Female">
+           
+
+            <label for="phone">Phone No:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter Phone number.....">
+        </form>
+        <a href="https://whatsapp.com/channel/0029Vap4Lz5DeON2kA7DQi2D" class="button"> Subscribe</a>
+<p>.</p>
+<p>.</p>
+<l><h2>MOOD SHIFT SONGS</h2></l>
+<audio controls src="Move on.mp3" alt="Move on"></audio>
+<br>
+  				<b>Move On</b>
+<video width="300px" height="250px" controls src="Lil Tecca Ransom.mp4" ></video>Lil Tecca- Ransom
+<br>
+<video width="300px" height="250px" controls src="Pureojuice Death note.mp4" ></video>
+Pureojuice- Death note
+<br>
+<video width="300px" height="250px" controls src="Pureojuice Akaza.mp4" ></video>Pureojuice- Akaza
+<br>
+<video width="300px" height="250px" controls src="Pureojuice Naruto.mp4"></video>Pureojuice- Naruto
+<br><br>
+ <a href="https://whatsapp.com/channel/0029Vb3xRx73wtb8XnCLzF0F" class="button"> ᴡᴀɴᴛ ᴛᴏ ʟᴇᴀʀɴ ᴄᴏᴅɪɴɢ</a>
+        <h2>P͟O͟W͟E͟R͟E͟D͟ B͟Y͟: 🄶🄰🄱 🅇</h2>
+    
+    <script>
+        document.getElementById("theme-toggle").addEventListener("click", function () {
+            document.body.classList.toggle("dark-mode");
+
+            // Save theme preference to local storage
+            if (document.body.classList.contains("dark-mode")) {
+                localStorage.setItem("theme", "dark");
+            } else {
+                localStorage.setItem("theme", "light");
+            }
+        });
+
+        // Load saved theme on page refresh
+        window.onload = function () {
+            if (localStorage.getItem("theme") === "dark") {
+                document.body.classList.add("dark-mode");
+            }
+        };
+    </script>
+    
+
+</body>
+</html>
